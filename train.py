@@ -9,6 +9,7 @@ import wandb
 from wandb.integration.keras import WandbMetricsLogger,WandbModelCheckpoint
 
 def main():
+    key_wandb = os.environ.get("KEY_WANDB")
     wandb.login(KEY_WANDB)
     total_data_class = []
     base_path = "/dataset-original"
